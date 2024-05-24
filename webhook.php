@@ -1,10 +1,10 @@
 <?php
 
 // تنظیمات توکن تلگرام و آدرس وبهوک دیسکورد
-$telegramBotToken = 'telegramBotToken';
-$telegramChatId = 'telegramChatId'; // شناسه گروه
-$telegramTopicId = 'telegramTopicId'; // شناسه موضوع
-$discordWebhookUrl = 'discordWebhookUrl';
+$telegramBotToken = 'YOUR_TELEGRAM_BOT_TOKEN';
+$telegramChatId = 'YOUR_CHAT_ID'; // شناسه گروه
+$telegramTopicId = 'YOUR_TOPIC_ID'; // شناسه موضوع
+$discordWebhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
 
 function sendTelegramMessage($message, $botToken, $chatId, $topicId) {
     $url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&message_thread_id=$topicId&text=" . urlencode($message);
